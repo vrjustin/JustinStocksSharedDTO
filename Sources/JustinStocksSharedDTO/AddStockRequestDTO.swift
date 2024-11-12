@@ -7,7 +7,12 @@
 
 import Foundation
 
-struct AddStockRequestDTO: Decodable {
-    let symbol: String
-    let description: String
+public struct AddStockRequestDTO: Decodable {
+    public let symbol: String
+    public let description: String
+    
+    public init(symbol: String, description: String) {
+        self.symbol = symbol
+        self.description = description
+    }
 }

@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct GetPricesForSymbolResponseDTO: Codable {
-    let id: UUID
-    let symbol: String
-    let date: Date
-    let open: Double
-    let close: Double
+public struct GetPricesForSymbolResponseDTO: Codable {
+    public let id: UUID
+    public let symbol: String
+    public let date: Date
+    public let open: Double
+    public let close: Double
     
-    init(id: UUID, symbol: String, date: Date, open: Double, close: Double) {
+    public init(id: UUID, symbol: String, date: Date, open: Double, close: Double) {
         self.id = id
         self.symbol = symbol
         self.date = date

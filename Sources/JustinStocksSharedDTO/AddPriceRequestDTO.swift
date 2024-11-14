@@ -12,4 +12,11 @@ public struct AddPriceRequestDTO: Decodable {
     public let date: Date
     public let open: Double
     public let close: Double
+    
+    public init(symbol: String, date: Date, open: Double, close: Double) {
+        self.symbol = symbol
+        self.date = date
+        self.open = open
+        self.close = close
+    }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct AddPriceRequestDTO: Decodable {
+public struct AddPriceRequestDTO: Codable {
     public let symbol: String
     public let date: Date
     public let open: Double
